@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Tableau des éléments HTML</title>
+<style>
+body {
+  background: radial-gradient(circle, #2b2d42, #1a1b2f);
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 70px);
+  gap: 8px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.item {
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: clamp(10px, 1vw, 14px);
+  transition: 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+/* Catégories */
+
+.racine { background: #72efdd; color: black; } /* Élément racine */
+.structure { background: #a0a0ff; }            /* Structure */
+.texte { background: #f1f58f; color: black; } /* Texte */
+.emphase { background: #90dbf4; color: black; } /* Emphase */
+.style { background: #90dbf4; color: black; } /* Style */
+.lien { background: #ff8fa3; }                /* Lien */
+.code { background: #ffd6a5; color: black; } /* Code */
+.semantics  { background: #3b2feb; color: rgb(255, 255, 255); } /* Text-level semantics */
+.ruby { background: #ffd6a5; color: black; } /* Annotations Ruby */
+.saut { background: #ffd6a5; color: black; } /* Saut de ligne */
+.form { background: #8ff5a5; color: black; } /* Formulaire */
+.liste { background: #ffe29a; color: black; } /* Liste */
+.section { background: #bdb2ff; }             /* Section */
+.interaction { background: #ffd6a5; color: black; } /* Interaction */
+.table { background: #ffadad; }              /* Table */
+.media { background: #e0aaff; }              /* Multimédia */
+.embed { background: #e0aaff; }              /* Contenu intégré */
+.adress { background: #f1f58f; color: black; } /* Adresse */
+.math { background: #f1f58f; color: black; } /* Math */
+.obsolete { background: #777; }              /* Obsolète */
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.legend div {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+</style>!
+</head>
+
+<body>
+
+<h1>📊 Tableau des éléments HTML (version française)</h1>
+
+<div class="grid">
+
+<!-- RACINE -->
+<div class="item racine">html</div>
+
+<!-- STRUCTURE -->
+<div class="item structure">head</div>
+<div class="item structure">body</div>
+<div class="item structure">title</div>
+<div class="item structure">meta</div>
+<div class="item structure">link</div>
+<div class="item structure">style</div>
+<div class="item structure">script</div>
+<div class="item structure">base</div>
+<div class="item structure">template</div>
+<div class="item structure">noscript</div>
+
+<!-- TEXTE -->
+<div class="item texte">h1-h6</div>
+<div class="item texte">p</div>
+<div class="item texte">span</div>
+<div class="item texte">address</div>
+<div class="item texte">pre</div>
+<div class="item texte">blockquote</div>
+<div class="item texte">div</div>
+
+<!-- EMPHASE -->
+<div class="item emphase">strong</div>
+<div class="item emphase">em</div>
+<div class="item emphase">small</div>
+<div class="item emphase">cite</div>
+<div class="item emphase">q</div>
+<div class="item emphase">dfn</div>
+<div class="item emphase">s</div>
+<div class="item emphase">abbr</div>
+<div class="item emphase">time</div>
+<div class="item emphase">b</div>
+<div class="item emphase">i</div>
+
+<!-- STYLE -->
+<div class="item style">mark</div>
+<!-- LIENS -->
+<div class="item lien">a</div>
+
+<!-- Code -->
+<div class="item code">code</div>
+<div class="item code">var</div>
+<div class="item code">sup</div>
+<div class="item code">kbd</div>
+<div class="item code">samp</div>
+<div class="item code">sub</div>
+
+
+<!-- ANNOTATIONS Ruby-->
+<div class="item ruby">ruby</div>
+<div class="item ruby">rt</div>
+<div class="item ruby">rp</div>
+
+<!-- Text-level semantics -->
+<div class="item semantics">bdi</div>
+<div class="item semantics">bdo</div>
+
+<!-- Saut de ligne -->
+<div class="item saut">br</div>
+<div class="item saut">wbr</div>
+<div class="item saut">hr</div>
+
+<!-- FORMULAIRE -->
+<div class="item form">form</div>
+<div class="item form">input</div>
+<div class="item form">textarea</div>
+<div class="item form">button</div>
+<div class="item form">select</div>
+<div class="item form">option</div>
+<div class="item form">label</div>
+<div class="item form">fieldset</div>
+<div class="item form">legend</div>
+<div class="item form">datalist</div>
+<div class="item form">optgroup</div>
+<div class="item form">output</div>
+<div class="item form">progress</div>
+<div class="item form">meter</div>
+
+<!-- LISTES -->
+<div class="item liste">ul</div>
+<div class="item liste">ol</div>
+<div class="item liste">li</div>
+<div class="item liste">dl</div>
+<div class="item liste">dt</div>
+<div class="item liste">dd</div>
+
+<!-- SECTIONS -->
+<div class="item section">header</div>
+<div class="item section">nav</div>
+<div class="item section">section</div>
+<div class="item section">article</div>
+<div class="item section">aside</div>
+<div class="item section">footer</div>
+<div class="item section">main</div>
+<div class="item section">div</div>
+
+<!-- INTERACTION -->
+<div class="item interaction">details</div>
+<div class="item interaction">summary</div>
+<div class="item interaction">dialog</div>
+
+<!-- TABLEAU -->
+<div class="item table">table</div>
+<div class="item table">thead</div>
+<div class="item table">tbody</div>
+<div class="item table">tfoot</div>
+<div class="item table">tr</div>
+<div class="item table">td</div>
+<div class="item table">th</div>
+<div class="item table">caption</div>
+<div class="item table">col</div>
+<div class="item table">colgroup</div>
+
+<!-- MULTIMEDIA -->
+<div class="item media">img</div>
+<div class="item media">video</div>
+<div class="item media">audio</div>
+<div class="item media">source</div>
+<div class="item media">track</div>
+<div class="item media">figure</div>
+<div class="item media">figcaption</div>
+<div class="item media">picture</div>
+<div class="item media">map</div>
+<div class="item media">area</div>  
+
+<!-- CONTENU INTEGRE -->
+<div class="item embed">iframe</div>
+<div class="item embed">object</div>
+<div class="item embed">param</div>
+<div class="item media">canvas</div>
+<div class="item media">svg</div>
+<!-- ADRESSE -->
+<div class="item adresse">address</div>
+
+<!-- MATH -->
+<div class="item math">math</div>
+
+<!-- OBSOLETE -->
+<div class="item obsolete">font</div>
+<div class="item obsolete">center</div>
+<div class="item obsolete">marquee</div>
+<div class="item obsolete">big</div>
+<div class="item obsolete">blink</div>
+<div class="item obsolete">strike</div>
+<div class="item obsolete">tt</div> 
+<div class="item obsolete">basefont</div>
+<div class="item obsolete">applet</div>
+<div class="item obsolete">acronym</div>
+<div class="item obsolete">frame</div>
+<div class="item obsolete">frameset</div>   
+
+
+</div>
+<!-- Légende -->
+<div class="legend">
+  <div class="racine">Élément racine</div>
+  <div class="structure">Structure</div>
+  <div class="texte">Texte</div>
+  <div class="emphase">Emphase</div>
+  <div class="style">Style</div>
+  <div class="lien">Lien</div>
+  <div class="code">Code</div>
+  <div class="semantics">Text-level semantics</div>
+  <div class="ruby">Annotations Ruby</div>
+  <div class="saut">Saut de ligne</div>
+  <div class="form">Formulaire</div>
+  <div class="liste">Liste</div>
+  <div class="section">Section</div>
+  <div class="interaction">Interaction</div>
+  <div class="table">Tableau</div>
+  <div class="media">Multimédia</div>
+  <div class="embed">Contenu intégré</div>
+  <div class="address">Adresse</div>
+  <div class="math">Math</div>
+  <div class="obsolete">Obsolète</div>
+</div>
+</body>
+</html>
