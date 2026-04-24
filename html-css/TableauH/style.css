@@ -1,0 +1,106 @@
+/* VARIABLES */
+:root {
+  --bg1: #1a1b2f;
+  --bg2: #2b2d42;
+
+  --racine: #72efdd;
+  --structure: #a0a0ff;
+  --texte: #f1f58f;
+  --emphase: #90dbf4;
+  --style: #90dbf4;
+  --lien: #ff8fa3;
+  --code: #ffd6a5;
+  --semantics: #3b2feb;
+  --ruby: #ffd6a5;
+  --saut: #ffd6a5;
+  --form: #8ff5a5;
+  --liste: #ffe29a;
+  --section: #bdb2ff;
+  --interaction: #ffd6a5;
+  --table: #ffadad;
+  --media: #e0aaff;
+  --embed: #e0aaff;
+  --adresse: #f1f58f;
+  --math: #f1f58f;
+  --obsolete: #777;
+}
+
+/* GLOBAL */
+body {
+  margin: 0;
+  background: radial-gradient(circle, var(--bg2), var(--bg1));
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/* TITRE */
+h1 {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+/* BLOCS */
+.item {
+  padding: 12px;
+  border-radius: 10px;
+  font-size: clamp(10px, 1vw, 14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* HOVER */
+.item:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* COULEURS */
+.racine { background: var(--racine); color: black; }
+.structure { background: var(--structure); }
+.texte { background: var(--texte); color: black; }
+.emphase { background: var(--emphase); color: black; }
+.style { background: var(--style); color: black; }
+.lien { background: var(--lien); }
+.code { background: var(--code); color: black; }
+.semantics { background: var(--semantics); color: white; }
+.ruby { background: var(--ruby); color: black; }
+.saut { background: var(--saut); color: black; }
+.form { background: var(--form); color: black; }
+.liste { background: var(--liste); color: black; }
+.section { background: var(--section); }
+.interaction { background: var(--interaction); color: black; }
+.table { background: var(--table); }
+.media { background: var(--media); }
+.embed { background: var(--embed); }
+.adresse { background: var(--adresse); color: black; }
+.math { background: var(--math); color: black; }
+.obsolete { background: var(--obsolete); }
+
+/* LÉGENDE */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.legend div {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+}
