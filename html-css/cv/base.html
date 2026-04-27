@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Démo HTML – Attributs en action</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    h1 { color: #2c3e50; }
+    h2 { margin-top: 25px; color: #34495e; }
+    .box { background: #f4f4f4; padding: 10px; border-left: 4px solid #3498db; margin-bottom: 15px; }
+    a { color: blue; }
+    img { max-width: 200px; display: block; margin-top: 10px; }
+    input { display: block; margin: 5px 0; padding: 5px; }
+  </style>
+</head>
+<body>
+
+<h1>🚀 Démo HTML – Voir les attributs en action</h1>
+<p>Cette page montre directement ce que font les attributs HTML.</p>
+
+<h2>🔗 href + target</h2>
+<div class="box">
+<a href="https://www.google.com" target="_blank">Ouvrir Google (nouvel onglet)</a><br>
+<a href="https://www.google.com" target="_self">Ouvrir Google (même onglet)</a>
+</div>
+
+<h2>📥 download</h2>
+<div class="box">
+<a href="data:text/plain,Bonjour%20CV" download="mon-fichier.txt">Télécharger un fichier exemple</a>
+</div>
+
+<h2>🏷️ title (survol de la souris)</h2>
+<div class="box">
+<a href="#" title="Ceci est une info-bulle">Passe la souris ici</a>
+</div>
+
+<h2>🖼️ src + alt (image)</h2>
+<div class="box">
+<img src="https://via.placeholder.com/150" alt="Image exemple">
+<p>Image affichée avec src + alt</p>
+</div>
+
+<h2>🎨 class (style)</h2>
+<div class="box">
+<p class="texte">Texte simple avec une classe (visible dans le code)</p>
+</div>
+
+<h2>🆔 id (identifiant)</h2>
+<div class="box">
+<h3 id="titre">Titre avec ID</h3>
+<p>Permet de cibler un élément unique</p>
+</div>
+
+<h2>📥 type (input)</h2>
+<div class="box">
+<input type="text" placeholder="text">
+<input type="email" placeholder="email">
+<input type="password" placeholder="password">
+<input type="number" placeholder="number">
+</div>
+
+<h2>✍️ placeholder</h2>
+<div class="box">
+<input placeholder="Écris ton nom ici">
+</div>
+
+<h2>🚫 required</h2>
+<div class="box">
+<input type="text" placeholder="obligatoire" required>
+<p>Ce champ est obligatoire (required)</p>
+</div>
+
+<h2>🔐 rel (exemple sécurité)</h2>
+<div class="box">
+<a href="https://example.com" target="_blank" rel="noopener noreferrer">Lien sécurisé</a>
+<p>rel sécurise les liens ouverts en nouvel onglet</p>
+</div>
+
+<h2>🧠 Résumé</h2>
+<ul>
+  <li>href = lien</li>
+  <li>src = image/fichier</li>
+  <li>target = ouverture lien</li>
+  <li>downloa

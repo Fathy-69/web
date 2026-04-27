@@ -1,0 +1,63 @@
+1
+<nav>
+2
+<a href=”/home.html”>Home</a>
+3
+<a href=”/about.html”>À propos</a>
+4
+<a href=”/projects.html”>Projets</a>
+5
+<a href=”/services.html”>Services</a>
+6
+<a href=”mailto:username@exemple.com”>Contact</a>
+7
+<a href=”./assets/CV.pdf” download>Télécharger le CV</a>
+8
+<a href=”https://gitbub.com/username” target=”_blank”>Home</a>
+9
+</nav>
+
+/portfolio
+│
+├── index.html
+├── about.html
+├── projects.html
+├── services.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+└── assets/
+    ├── images/
+    └── cv.pdf
+
+
+/ (site racine)
+│
+├── Home (Accueil)
+│   ├── Présentation rapide
+│   ├── Bouton : Télécharger CV
+│   └── Accès navigation
+│
+├── À propos
+│   ├── Ton profil
+│   ├── Parcours
+│   └── Compétences
+│
+├── Projets
+│   ├── Liste de projets
+│   ├── Description de chaque projet
+│   └── Liens GitHub associés
+│
+├── Services
+│   ├── Ce que tu proposes (Data, dev, etc.)
+│   └── Exemples ou prestations
+│
+└── Contact
+    ├── Formulaire de contact
+    ├── Email
+    └── Liens LinkedIn / GitHub
